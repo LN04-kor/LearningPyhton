@@ -6,22 +6,20 @@ def sub(a, b):
 
 def main():
     while True:
-        indexs = input().split()
-        a, b = map(int, indexs[:2])
-        command = indexs[2]
+        command = input()
+        if(command == "end"):
+            break
+        else:
+            command == input():
 
 
         
         if(command == "-"):
-            num = sub(a, b)
-            print(num)
+            print(input(add(a, b))
         elif(command == "+"):
-            num = add(a, b)
-            print(num)
-        elif(command == "end"):
-            break
+            print(input(add(a, b))
         else:
-            print("i can understand only +, -,end")
+            print("i can understand only +, -")
     
         print("\n", "-----", "\n")
 
