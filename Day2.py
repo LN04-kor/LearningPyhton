@@ -5,7 +5,7 @@ def sub(a, b):
     return a - b
 
 def main():
-    while():
+    while True:
         a, b = map(int, input().split())
         command = input() # I want to place input in 1 line
         if(command == "-"):
