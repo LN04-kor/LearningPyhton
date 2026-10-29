@@ -5,16 +5,12 @@ def sub(a, b):
     return a - b
 
 def main():
-    a, b = 0
+    a, b = 0, 0
     while True:
         command = input("command>")
         if(command == "end"):
             break
-        else:
-            command = input("calculate>")
-
-
-        if(command == "-"):
+        elif(command == "-"):
             print(int(input("insert two number>", sub(a, b).split())))
         elif(command == "+"):
             print(int(input("insert two number>", add(a, b).split())))
