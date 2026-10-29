@@ -6,9 +6,9 @@ def Sub(a, b):
     return a - b
 
 
-def WrongIndex():
+def GetNumber():
     try:
-        a, b = map(int, input("insert two number>")
+        a, b = map(int, input("insert two number>").split())
         return a, b
     except ValueError:
         print("wrong type index")
@@ -26,13 +26,13 @@ def main():
             print("i can't understand about it")
             continue
 
-        index = WrongIndex()
+        index = GetNumber()
         if index is None : 
             continue
         a, b = index
 
         if command == "+" : 
-            print(add(a, b)
+            print(add(a, b))
         elif command == "+" : 
             print(sub(a, b)) 
         
