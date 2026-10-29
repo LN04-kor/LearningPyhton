@@ -25,7 +25,7 @@ def GetNumber():
 
 def main():
     while True:
-        command = input("command>")
+        command = input("command>").strip
         if command == "end" :
             break
         
@@ -45,7 +45,10 @@ def main():
         elif command == "*" : 
             print(Mul(a, b))
         elif command == "/" : 
-            print(Div(a, b))
+            try:
+                print(Div(a, b))
+            except ZeroDivisionError:
+                print("you can't do that")
         
     
         print("\n", "-----", "\n")
