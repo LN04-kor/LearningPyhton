@@ -25,7 +25,7 @@ def GetNumber():
 
 def main():
     while True:
-        command = input("command>").strip
+        command = input("command>").strip()
         if command == "end" :
             break
         
