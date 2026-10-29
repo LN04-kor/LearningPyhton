@@ -6,8 +6,12 @@ def sub(a, b):
 
 def main():
     while True:
-        a, b = map(int, input().split())
-        command = input() # I want to place input in 1 line
+        indexs = input().split()
+        a, b = map(int, indexs[:2])
+        command = indexs[2]
+
+
+        
         if(command == "-"):
             num = sub(a, b)
             print(num)
@@ -25,5 +29,5 @@ def main():
 #I made this code with while() so there are  evidences
        
 
-if __name__ == "__main__" : # interesting usage
+if __name__ == "__main__" :
     main()
