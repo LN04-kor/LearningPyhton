@@ -6,6 +6,13 @@ def Sub(a, b):
     return a - b
 
 
+def Mul(a, b):
+    return a * b
+
+def Div(a, b):
+    return a / b
+
+
 def GetNumber():
     try:
         a, b = map(int, input("insert two number>").split())
@@ -22,7 +29,7 @@ def main():
         if command == "end" :
             break
         
-        if command not in ("+", "-") :
+        if command not in ("+", "-", "*", "/") :
             print("i can't understand about it")
             continue
 
@@ -32,9 +39,13 @@ def main():
         a, b = index
 
         if command == "+" : 
-            print(add(a, b))
-        elif command == "+" : 
-            print(sub(a, b)) 
+            print(Add(a, b))
+        elif command == "-" : 
+            print(Sub(a, b)) 
+        elif command == "*" : 
+            print(Mul(a, b))
+        elif command == "/" : 
+            print(Div(a, b))
         
     
         print("\n", "-----", "\n")
