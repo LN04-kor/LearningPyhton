@@ -7,17 +7,17 @@ def sub(a, b):
 def main():
     a, b = 0
     while True:
-        command = input()
+        command = input("command>")
         if(command == "end"):
             break
         else:
-            command = input()
+            command = input("calculate>")
 
 
         if(command == "-"):
-            print(input(add(a, b)))
+            print(int(input("insert two number>", add(a, b))))
         elif(command == "+"):
-            print(input(add(a, b)))
+            print(int(input("insert two number>", add(a, b))))
         else:
             print("i can understand only +, -")
     
