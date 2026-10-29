@@ -15,9 +15,9 @@ def main():
 
 
         if(command == "-"):
-            print(int(input("insert two number>", add(a, b))))
+            print(int(input("insert two number>", sub(a, b).split())))
         elif(command == "+"):
-            print(int(input("insert two number>", add(a, b))))
+            print(int(input("insert two number>", add(a, b).split())))
         else:
             print("i can understand only +, -")
     
