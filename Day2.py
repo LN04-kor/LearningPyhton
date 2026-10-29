@@ -14,12 +14,12 @@ def main():
         elif(command == "+"):
             num = add(a, b)
             print(num)
+        elif(command == "end"):
+            break
         else:
-            print("i can understand only + or -")
+            print("i can understand only +, -,end")
     
-        if(num == 0):
-           break
-        print("₩n", "-----", "₩n")
+        print("\n", "-----", "\n")
 
 
 #I made this code with while() so there are  evidences
