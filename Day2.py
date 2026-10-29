@@ -1,21 +1,41 @@
-def add(a, b):
+def Add(a, b):   
     return a + b
 
-def sub(a, b):
+
+def Sub(a, b):
     return a - b
 
+
+def WrongIndex():
+    try:
+        a, b = map(int, input("insert two number>")
+        return a, b
+    except ValueError:
+        print("wrong type index")
+        return None
+
+    
+
 def main():
-    a, b = 0, 0
     while True:
         command = input("command>")
-        if(command == "end"):
+        if command == "end" :
             break
-        elif(command == "-"):
-            print(int(input("insert two number>", sub(a, b).split())))
-        elif(command == "+"):
-            print(int(input("insert two number>", add(a, b).split())))
-        else:
-            print("i can understand only +, -")
+        
+        if command not in ("+", "-") :
+            print("i can't understand about it")
+            continue
+
+        index = WrongIndex()
+        if index is None : 
+            continue
+        a, b = index
+
+        if command == "+" : 
+            print(add(a, b)
+        elif command == "+" : 
+            print(sub(a, b)) 
+        
     
         print("\n", "-----", "\n")
 
