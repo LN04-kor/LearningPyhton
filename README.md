@@ -1,7 +1,7 @@
 # LearningPyhton
 Dayiling savement that I learned about  
   
-writed by py3.12.16 with VScode  
+writed by py3.15.12 with VScode  
 
   
   
