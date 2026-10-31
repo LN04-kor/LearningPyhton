@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 
 app = FastAPI()
 
@@ -21,7 +21,7 @@ def calculate(a: int, b: int, operation: str):
         return {"result": a * b}
     elif operation == "divide":
         if b == 0:
-            return {"error": "Division by zero is not allowed"}
+            raise HTTPException(status_code=400, detail="Division by zero is not allowed")
         return {"result": a / b}
     else:
-        return {"error": "Invalid operation"}
+        raise HTTPException(status_code=400, detail="Unsupported operation")
