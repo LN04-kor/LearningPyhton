@@ -7,14 +7,17 @@ class Memo(BaseModel):
     title: str
     content: str
 
-@app.get("/")
 
+
+@app.get("/")
 def root():
     return "Hello World"
+
 
 @app.get("/health")
 def health_check():
     return "ok"
+
 
 @app.get("/calculate")
 def calculate(a: int, b: int, operation: str):
@@ -30,3 +33,8 @@ def calculate(a: int, b: int, operation: str):
         return {"result": a / b}
     else:
         raise HTTPException(status_code=400, detail="Unsupported operation")
+
+@app.get("/menu")
+def create_menu(memo: Memo):
+    return {"title": Memo.title, "content": Memo.content}
+   
