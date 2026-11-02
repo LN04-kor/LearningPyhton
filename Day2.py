@@ -53,7 +53,7 @@ def main():
         print("\n", "-----", "\n")
 
 
-#I made this code with while() so there are  evidences
+#I made this code with while() so there are evidences
        
 
 if __name__ == "__main__" :

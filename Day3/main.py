@@ -1,6 +1,11 @@
 from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
 
 app = FastAPI()
+
+class Memo(BaseModel):
+    title: str
+    content: str
 
 @app.get("/")
 
